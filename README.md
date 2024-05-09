@@ -6,5 +6,5 @@
 Для установки LLaMAxmpp потребуется:
 <ol>
   <li>Установить для python пакеты: <code>slixmpp llama-cpp-python translate langdetect</code> (Работает только на Линуксе)</li>
-  <li>Скачать с https:huggingface.co или с другого источника языковую модель LLaMA или другю с расширением .gguf .ggml и .bin</li>
+  <li>Скачать с https://huggingface.co или с другого источника языковую модель LLaMA или другую с расширением .gguf, .ggml или .bin</li>
 </ol>
