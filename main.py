@@ -3,6 +3,8 @@ from llama_cpp import Llama
 from translate import Translator
 from langdetect import detect
 
+login = "login@host.com"
+passw = "password"
 model = "tinyllama.gguf"
 tokens = 256
 descrption = "Информация о боте:\nЭтот чат бот сделан на основе TinyLLaMA с 1.1 триллионом параметров. Но он с обычным общением почему то плох, ему лучше задавать только вопросы, и то, он с вами может только по английскому разговаривать.\nСам сервер ограничел TinyLLaMA на 256 токенов и квантовым размером в Q4, из-за того что сама нейросеть хостится на телефоне, поэтому придётся ждать где-то 1 – 2 минуты чтобы нейросеть отправила результат.\n\nУдачного вам использования бота!"
@@ -41,6 +43,6 @@ class LLaMABot(ClientXMPP):
                 msg.reply(questo[len(questi):]).send()
 
 if __name__ == '__main__':
-    xmpp = LLaMABot('dibofbot@jabb.im', 'Nightsandytiktok234')
+    xmpp = LLaMABot(login, passw)
     xmpp.connect()
     xmpp.process()
