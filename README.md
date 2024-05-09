@@ -3,3 +3,7 @@
 <img src="screenshot1.png"><br>
 Демонстрация работы LLaMAxmpp на основе языковой модели TinyLLaMA<br>
 # Установка LLaMAxmpp:
+Для установки LLaMAxmpp потребуется:
+<ol>
+  <li>Установить для python пакеты: <code>slixmpp llama-cpp-python translate langdetect</code> <p color="red"> (Работает только на Линуксе)</p></li>
+</ol>
